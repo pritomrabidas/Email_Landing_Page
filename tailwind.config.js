@@ -10,6 +10,7 @@ export default {
       colors: {
         primary: "#212121",
         secandari: "#3FD0D4",
+        brand:"#fb9d50"
       },
       fontFamily: {
         Popins: ["Poppins", "sans-serif"],

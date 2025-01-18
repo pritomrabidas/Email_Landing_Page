@@ -14,13 +14,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white fixed w-full">
+    <nav className="bg-white fixed w-full z-50">
       <div className="container mx-auto p-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between h-16 border-b pb-2 border-[#322f2f84]">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="text-2xl font-bold text-orange-300">
+              <a href="/" className="text-2xl font-bold text-brand">
                 MyBrand
               </a>
             </div>

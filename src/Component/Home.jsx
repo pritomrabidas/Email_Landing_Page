@@ -1,21 +1,15 @@
+import Banner from "./Home/Banner";
+import Effortlessly from "./Home/Effortlessly";
+import Navigation from "./Home/Navigation";
 
 const Home = () => {
   return (
-    <div>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
-    </div>
-  )
-}
+      <div className="pt-16">
+        <Banner/>
+        <Navigation/>
+        <Effortlessly/>
+      </div>
+  );
+};
 
-export default Home
+export default Home;
