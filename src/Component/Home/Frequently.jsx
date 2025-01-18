@@ -1,0 +1,92 @@
+import { useState } from "react";
+
+const Frequently = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const faqs = [
+    {
+      question: "1. Is there a free trial available?",
+      answer:
+        "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free 30-minute onboarding call to get you up and running.",
+    },
+    {
+      question: "2. Can I change my plan later?",
+      answer:
+        "Of course you can! Our pricing scales with your company. Chat to our friendly team to find a solution that works for you as you grow.",
+    },
+    {
+      question: "3. What is your cancellation policy?",
+      answer:
+        "We understand that things change. You can cancel your plan at any time and we'll refund you the difference already paid.",
+    },
+    {
+      question: "4. Can other info be added to an invoice?",
+      answer:
+        "At the moment, the only way to add additional information to invoices is to add the information to the workspace's name manually.",
+    },
+    {
+      question: "5. How does billing work?",
+      answer:
+        "Plans are per workspace, not per account. You can upgrade one workspace, and still have any number of free workspaces.",
+    },
+  ];
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+  return (
+    <section>
+      <div className="container px-12">
+        <div className="flex mx-auto p-6 w-full items-center">
+          {/* Heading Section */}
+          <div className=" mb-8 w-1/2">
+            <h6 className="text-lg text-brand font-Montserrat font-medium">
+              Frequently Asked Questions
+            </h6>
+            <h2 className=" 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl font-extrabold text-primary font-NunitoFont my-4">
+              We're here <span className="text-blue-500">to answer</span> all
+              your questions
+            </h2>
+            <p className=" text-sm 2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[70%] sm:w-[80%] w-[90%] text-primary font-Opensans font-normal  flex">
+              Everything you need to know about the product and billing. Can’t
+              find the answer you’re looking for? Please chat with our friendly
+              team.
+            </p>
+          </div>
+          {/* Accordion Section */}
+          <div className="space-y-4 w-1/2 justify-center">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="border border-gray-200 rounded-lg shadow-sm overflow-hidden w-[80%]"
+              >
+                <button
+                  className="w-full flex justify-between items-center p-4 text-left bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 du"
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <span className="font-medium text-gray-800">
+                    {faq.question}
+                  </span>
+                  <span className="ml-4">
+                    {activeIndex === index ? (
+                      <i className="icon-arrow-up text-gray-600"></i>
+                    ) : (
+                      <i className="icon-arrow-down text-gray-600"></i>
+                    )}
+                  </span>
+                </button>
+                {activeIndex === index && (
+                  <div className="p-4 bg-gray-50 text-gray-700">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Frequently;
