@@ -59,7 +59,7 @@ const Effortlessly = () => {
               </div>
             </div>
           </div>
-          <div id="section2" className="bg-[#f7acac12] py-12 w-full">
+          <div id="section2" className="bg-[#f7acac12] py-12 w-full my-5">
             <div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col w-full">
               <div className="2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-full sm:w-full w-full flex justify-center pt-9 px-6">
                 <img
@@ -111,7 +111,7 @@ const Effortlessly = () => {
               </div>
             </div>
           </div>
-          <div id="section3" className="bg-[#f7acac12] py-12 w-full">
+          <div id="section3" className="bg-[#f7acac12] py-12 w-full mb-10">
             <div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col w-full">
               <div className="2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-full sm:w-full w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-8 px-5 mt-5">
                 <div className=" mb-8">

@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const [activeLink, setActiveLink] = useState("#features");
+  const [activeLink, setActiveLink] = useState(true);
 
   const handleLinkClick = (section) => {
     setActiveLink(section);
@@ -28,7 +28,7 @@ const Navbar = () => {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 text-primary font-medium text-base font-Popins">
               <Link
-                to="#features"
+                to="/features"
                 className={`${
                   activeLink === "#features"
                     ? "text-[#fb9d50]"
