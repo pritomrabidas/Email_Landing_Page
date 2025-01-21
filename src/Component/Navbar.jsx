@@ -39,7 +39,7 @@ const Navbar = () => {
                 Features
               </Link>
               <Link
-                to="#pricing"
+                to="/pricing"
                 className={`${
                   activeLink === "#pricing"
                     ? "text-[#fb9d50]"
@@ -50,7 +50,7 @@ const Navbar = () => {
                 Pricing
               </Link>
               <Link
-                to="#resources"
+                to="/resources"
                 className={`${
                   activeLink === "#resources"
                     ? "text-[#fb9d50]"
