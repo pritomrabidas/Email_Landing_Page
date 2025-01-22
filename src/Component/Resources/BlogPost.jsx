@@ -53,18 +53,18 @@ const BlogPost = () => {
   ];
 
   return (
-    <div className="px-20">
+    <div className="2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-10 px-2">
       {posts.map((post) => (
         <div
           key={post.id}
-          className=" bg-white shadow-md scale-95 duration-200 hover:scale-100 rounded-md overflow-hidden mb-6 w-[70%] justify-center mx-auto"
+          className=" bg-white shadow-md scale-95 duration-200 hover:scale-100 rounded-md overflow-hidden mb-6 2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[80%] sm:w-[80%] w-[90%] justify-center mx-auto"
         >
           <div>
             <Link title={post.title}>
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-[360px]"
+                className="w-full 2xl:h-[360px] xl:h-[360px] lg:h-[360px] md:h-[300px] sm:h-[300px] h-[280px]"
                 loading="lazy"
               />
             </Link>
@@ -94,7 +94,7 @@ const BlogPost = () => {
               </span>
             </div>
             <div>
-              <p  className=" w-1/2 font-normal font-Opensans text-primary text-base">
+              <p  className=" 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-[80%] sm:w-[90%] w-[95%] font-normal font-Opensans text-primary text-base">
                 {post.description}
               </p>
             </div>

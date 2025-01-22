@@ -61,18 +61,7 @@ const Navbar = () => {
                 Resources
               </Link>
               <Link
-                to="#help"
-                className={`${
-                  activeLink === "#help"
-                    ? "text-[#fb9d50]"
-                    : "hover:text-[#fb9d50]"
-                } duration-300 transition-all`}
-                onClick={() => handleLinkClick("#help")}
-              >
-                Help
-              </Link>
-              <Link
-                to="#contact"
+                to="/contact"
                 className={`${
                   activeLink === "#contact"
                     ? "text-[#fb9d50]"
