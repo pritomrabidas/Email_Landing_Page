@@ -9,7 +9,8 @@ const Catching = () => {
     <section className="py-10">
       <div className="container mx-auto flex px-14">
         <div className="flex 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-col flex-col w-full items-center">
-          <div className="my-8 2xl:w-[40%] xl:w-[40%] md:w-[60%] lg:w-[40%] sm:w-full w-full">
+          <div data-aos="fade-up"
+          data-aos-duration="2000" className="my-8 2xl:w-[40%] xl:w-[40%] md:w-[60%] lg:w-[40%] sm:w-full w-full">
             <h6 className="text-lg text-brand font-Montserrat font-medium">
               Newsletter Solutions
             </h6>
@@ -27,7 +28,8 @@ const Catching = () => {
               </button>
             </Link>
           </div>
-          <div className="2xl:w-[60%] xl:w-[60%] md:w-[40%] lg:w-[60%] sm:w-[80%] w-[90%] gap-5 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1">
+          <div data-aos="fade-up"
+          data-aos-duration="2000" className="2xl:w-[60%] xl:w-[60%] md:w-[40%] lg:w-[60%] sm:w-[80%] w-[90%] gap-5 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1">
             <div className="p-5 h-fit bg-[#fb9d5065] w-fit rounded-md">
               <MdOutlineComputer className="text-5xl text-brand" />
               <h4 className="font-medium font-NunitoFont text-primary text-xl py-2">

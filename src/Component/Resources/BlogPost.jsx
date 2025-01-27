@@ -56,6 +56,8 @@ const BlogPost = () => {
     <div className="2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-10 px-2">
       {posts.map((post) => (
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           key={post.id}
           className=" bg-white shadow-md scale-95 duration-200 hover:scale-100 rounded-md overflow-hidden mb-6 2xl:w-[70%] xl:w-[70%] lg:w-[70%] md:w-[80%] sm:w-[80%] w-[90%] justify-center mx-auto"
         >
@@ -94,7 +96,7 @@ const BlogPost = () => {
               </span>
             </div>
             <div>
-              <p  className=" 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-[80%] sm:w-[90%] w-[95%] font-normal font-Opensans text-primary text-base">
+              <p className=" 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-[80%] sm:w-[90%] w-[95%] font-normal font-Opensans text-primary text-base">
                 {post.description}
               </p>
             </div>

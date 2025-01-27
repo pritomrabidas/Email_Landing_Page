@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white duration-200 hover:bg-[#fb9d50ca] focus:outline-none"
               >
                 <svg
                   className="h-6 w-6"
@@ -112,36 +112,34 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="#features"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              <Link
+                to="/features"
+                onClick={()=>setIsOpen(!isOpen)}
+                className="block px-3 py-2 rounded-md text-base hover:text-brand duration-150 font-NunitoFont  font-medium"
               >
                 Features
-              </a>
-              <a
-                href="#pricing"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              </Link>
+              <Link
+                to="/pricing"
+                onClick={()=>setIsOpen(!isOpen)}
+                className="block px-3 py-2 rounded-md text-base hover:text-brand duration-150 font-NunitoFont  font-medium"
               >
                 Pricing
-              </a>
-              <a
-                href="#resources"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              </Link>
+              <Link
+                to="/resources"
+                onClick={() => setIsOpen(!isOpen)}
+                className="block px-3 py-2 rounded-md text-base hover:text-brand duration-150 font-NunitoFont  font-medium"
               >
                 Resources
-              </a>
-              <a
-                href="#help"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
-              >
-                Help
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              </Link>
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(!isOpen)}
+                className="block px-3 py-2 rounded-md text-base hover:text-brand duration-150 font-NunitoFont  font-medium"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}

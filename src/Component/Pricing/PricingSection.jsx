@@ -27,7 +27,11 @@ const PricingSection = () => {
   return (
     <section>
       <div className="container 2xl:px-20 xl:px-20 lg:px-10 md:px-2 sm:px-20 px-5">
-        <div className="flex 2xl:flex-row md:flex-row sm:flex-col flex-col items-center gap-2 p-8">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          className="flex 2xl:flex-row md:flex-row sm:flex-col flex-col items-center gap-2 p-8"
+        >
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
